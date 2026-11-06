@@ -1,0 +1,10 @@
+<h1>Vehicles</h1>
+
+<div class="row">
+    @for(vhe of vehicleList(); track vhe.name) {
+    <div class="col-md-3">
+        <app-vehicle-item-component [vehicle]="vhe"
+            (vehicleClicked)="openVehicleModal($event)"></app-vehicle-item-component>
+    </div>
+    }
+</div>

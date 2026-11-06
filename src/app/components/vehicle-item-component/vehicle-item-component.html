@@ -1,0 +1,9 @@
+<section class="card" style="max-width: 320px">
+    <div class="card-body">
+        <h4 class="card-title">{{vehicle()?.name}}</h4>
+        <p class="card-text">Model: ({{vehicle()?.model}})</p>
+        <p class="card-text">Capacity: ({{vehicle()?.passengers}})</p>
+        <p class="card-text">Crew: ({{vehicle()?.crew}})</p>
+        <button type="button" class="btn-solid theme-primary, btn btn-success" (click)="emitCharacterClicked()">View detail</button>
+    </div>
+</section>

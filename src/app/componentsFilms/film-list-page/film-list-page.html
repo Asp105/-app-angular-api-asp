@@ -1,0 +1,11 @@
+<h1>Films</h1>
+
+<div class="row">
+    @for(flm of filmList(); track flm.title) {
+    <div class="col-md-3">
+        <app-film-item-component [film]="flm">
+            
+        </app-film-item-component>
+    </div>
+    }
+</div>
